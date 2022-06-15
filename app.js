@@ -1,8 +1,9 @@
 // Importing libraries and modules
 const fs = require('fs')
+const splitLogLines = require('./modules/splitLogLines')
 
 // Implementing code
-const content = fs.readFileSync("qgames.log", "utf-8")
+let content = splitLogLines('./qgames.log')
 
 // Returning result
 console.log(content)

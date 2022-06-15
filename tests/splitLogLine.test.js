@@ -1,4 +1,3 @@
-const fs = require('fs');
 const splitLogLines = require('../modules/splitLogLines');
 
 describe('Split Log Lines', () => {
