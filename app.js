@@ -3,7 +3,7 @@ const fs = require('fs')
 const splitLogLines = require('./modules/splitLogLines')
 
 // Implementing code
-let content = splitLogLines('./qgames.log')
+let logLinesArray = splitLogLines('./qgames.log')
 
 // Returning result
-console.log(content)
+console.log(logLinesArray)
