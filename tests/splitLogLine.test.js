@@ -2,8 +2,6 @@ const fs = require('fs');
 
 describe('Split Log Lines', () => {
 
-  it('01. splits lines for testLog01', () => {
-    
-  })
+  it.todo('01. splits lines for testLog01')
 
 })
