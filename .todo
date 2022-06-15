@@ -1,0 +1,26 @@
+System should follow these steps:
+  ☐ 1. Find matches' start and end point and declare a variable to receive the game data
+  ☐ 2. Pass each line of a match through a series of auxiliary functions to process users interactions and calculate kill counts
+  ☐ 3. Return the game data and write a JSON file with the result
+
+The log file contains the following trigger words:
+  ☐ 1. InitGame
+  ☐ 2. ClientConnect
+  ☐ 3. ClientUserinfoChanged
+  ☐ 4. Kill
+
+When reading each log line, the system should verify:
+  ClientConnect:
+    ☐ Was the player already logged in this match?
+  ClientUserinfoChanged:
+    ☐ Does the player's name changed?
+    ☐ Does the player's name have spaces in it?
+  Kill:
+    ☐ Is it a "player kill"? -> Add 1 to his/her killCount and to totalKillCount
+    ☐ Is it a "world kill"? -> Subtract 1 from his/her killCount and add 1 to totalKillCount
+
+Player ranking:
+  ☐ Iterate through count kills and create an array with the values (do not repeat values)
+  ☐ Sort values in decreasing order
+  ☐ Mount 'ranking' object with values as keys
+  ☐ Add an array of users' name (for cases where more than one player got the same score) to each key
