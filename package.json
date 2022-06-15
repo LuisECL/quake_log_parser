@@ -4,7 +4,7 @@
   "description": "System that parses Quake log files and groups game data for each match",
   "main": "app.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --coverage --verbose"
   },
   "repository": {
     "type": "git",
