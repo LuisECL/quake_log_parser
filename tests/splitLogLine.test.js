@@ -19,4 +19,12 @@ describe('Split Log Lines', () => {
     expect(functionReturn).toEqual(expectedResult)
   })
 
+  it('03. returns array with 5307 lines', () => {
+    let pathString = "./qgames.log"
+    let functionReturn = splitLogLines(pathString).length
+    let expectedResult = 5306
+
+    expect(functionReturn).toEqual(expectedResult)
+  })
+
 })
