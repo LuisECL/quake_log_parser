@@ -7,7 +7,6 @@ const getStartEndPoints = function(logLinesArray){
     let triggerWord = logLine.split(" ")[1]
 
     if (triggerWord == "InitGame:"){
-      console.log(triggerWord)
       initGameIndexArray.push(i)
     }
   };
