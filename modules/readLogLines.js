@@ -1,24 +1,21 @@
 const readLogLines = function(logLinesArray, allStartEndPoints) {
 
-  // Provisional: variable to store time stamps
-  const timeStampArray = []
-
   allStartEndPoints.forEach(startEndPair => {
 
     let startPoint = startEndPair[0]
     let endPoint = startEndPair[1]
     let playersObj = {}
+    let killsObj = {total: 0}
 
 
     for (let i = startPoint; i <= endPoint; i++){
       let logLine = logLinesArray[i].split(" ")
-      timeStampArray.push(timeStamp)
+      console.log(logLine)
     }
 
   });
 
-  console.log(timeStampArray)
-  return timeStampArray
+  return
 
 }
 
