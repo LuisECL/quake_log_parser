@@ -7,8 +7,13 @@ const clientUpdate = function(logLine, playersObj){
     return playersObj
   }
 
-  const userName = logLine[3].split("\\")[1]
-  console.log(userName)
+  let stringsAfterThirdElement = []
+  for (let  i=3; i <logLine.length; i++){
+    stringsAfterThirdElement.push(logLine[i])
+  }
+
+  let stringWithUsersName = stringsAfterThirdElement.join(' ')
+  const userName = stringWithUsersName.split("\\")[1]
 
   if(userName == playersObj[clientID]){
     return playersObj
