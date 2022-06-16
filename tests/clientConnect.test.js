@@ -51,6 +51,62 @@ describe('clientConnect reading function',()=> {
     expect(functionReturn).toEqual(expectedResult)
   })
 
-  it.todo('04. Adds first player of the match')
+  it('04. Adds first player of the match', ()=> {
+    let logLine = ['20:34', 'ClientConnect:', '2']
+    let playersObj = {}
+    let killsObj = {total: 0}
+
+    let functionReturn = clientConnect(logLine, playersObj, killsObj)
+    let expectedResult = [
+      {'2': "player's_name"},
+      {total: 0, '2': 0}
+    ]
+
+    expect(functionReturn).toEqual(expectedResult)
+  })
+
+  it('05. Test 02 + total of 6 players', ()=> {
+    let logLine = ['20:34', 'ClientConnect:', '3']
+    let playersObj = {
+      '2': "Oootsimo",
+      '3': "Dono da Bola",
+      '4': "Zeh",
+      '5': "Chessus",
+      '6': "Mal",
+      '7': "Assassinu Credi",
+    }
+    let killsObj = {
+      total: 20,
+      '2': 5,
+      '3': 4,
+      '4': 3,
+      '5': 2,
+      '6': 1,
+      '7': 0
+    }
+
+    let functionReturn = clientConnect(logLine, playersObj, killsObj)
+    let expectedResult = [
+      {
+        '2': "Oootsimo",
+        '3': "Dono da Bola",
+        '4': "Zeh",
+        '5': "Chessus",
+        '6': "Mal",
+        '7': "Assassinu Credi",
+      },
+      {
+        total: 20,
+        '2': 5,
+        '3': 4,
+        '4': 3,
+        '5': 2,
+        '6': 1,
+        '7': 0
+      }
+    ]
+
+    expect(functionReturn).toEqual(expectedResult)
+  })
 
 })
