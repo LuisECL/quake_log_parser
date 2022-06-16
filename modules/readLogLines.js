@@ -1,3 +1,5 @@
+const clientConnect = require("./clientConnect");
+
 const readLogLines = function(logLinesArray, allStartEndPoints) {
 
   allStartEndPoints.forEach(startEndPair => {
@@ -10,7 +12,9 @@ const readLogLines = function(logLinesArray, allStartEndPoints) {
 
     for (let i = startPoint; i <= endPoint; i++){
       let logLine = logLinesArray[i].split(" ")
-      console.log(logLine)
+
+      let returnClientConnect = clientConnect(logLine, playersObj, killsObj)
+      console.log(returnClientConnect)
     }
 
   });
