@@ -33,4 +33,14 @@ describe('clientUpdate reading function', ()=> {
     expect(functionReturn).toEqual(expectedResult)
   })
 
+  it("04. Update user's name", ()=> {
+    let logLine = logLines.clientUpdateWithSpaces
+    let playersObj = {'2': "Isgalamido"}
+
+    let functionReturn = clientUpdate(logLine, playersObj)
+    let expectedResult = {'2': "Dono da Bola"}
+
+    expect(functionReturn).toEqual(expectedResult)
+  })
+
 })

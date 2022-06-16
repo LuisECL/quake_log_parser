@@ -19,6 +19,9 @@ const clientUpdate = function(logLine, playersObj){
     return playersObj
   }
 
+  playersObj[clientID] = userName
+  return playersObj
+
 }
 
 module.exports = clientUpdate
