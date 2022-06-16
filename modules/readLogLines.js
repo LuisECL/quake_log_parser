@@ -13,8 +13,8 @@ const readLogLines = function(logLinesArray, allStartEndPoints) {
     for (let i = startPoint; i <= endPoint; i++){
       let logLine = logLinesArray[i].split(" ")
 
-      let returnClientConnect = clientConnect(logLine, playersObj, killsObj)
-      console.log(returnClientConnect)
+      clientConnect(logLine, playersObj, killsObj)
+      console.log([playersObj, killsObj])
     }
 
   });
