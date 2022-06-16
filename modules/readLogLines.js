@@ -7,10 +7,11 @@ const readLogLines = function(logLinesArray, allStartEndPoints) {
 
     let startPoint = startEndPair[0]
     let endPoint = startEndPair[1]
+    let playersObj = {}
 
 
     for (let i = startPoint; i <= endPoint; i++){
-      let timeStamp = logLinesArray[i].split(" ")[0]
+      let logLine = logLinesArray[i].split(" ")
       timeStampArray.push(timeStamp)
     }
 
