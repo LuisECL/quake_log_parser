@@ -1,4 +1,5 @@
 const clientConnect = require("./clientConnect");
+const clientUpdate = require("./clientUpdate");
 
 const readLogLines = function(logLinesArray, allStartEndPoints) {
 
@@ -14,6 +15,7 @@ const readLogLines = function(logLinesArray, allStartEndPoints) {
       let logLine = logLinesArray[i].split(" ")
 
       clientConnect(logLine, playersObj, killsObj)
+      clientUpdate(logLine, playersObj)
       console.log([playersObj, killsObj])
     }
 
