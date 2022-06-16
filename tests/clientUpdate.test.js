@@ -14,11 +14,11 @@ describe('clientUpdate reading function', ()=> {
   })
 
   it("02. If player hasn't changed names, return playersObj", ()=> {
-    let logLine = logLines.clientUpdateUser2
-    let playersObj = {'2': "Isgalamido"}
+    let logLine = logLines.clientUpdateWithSpaces
+    let playersObj = {'2': "Dono da Bola"}
 
     let functionReturn = clientUpdate(logLine, playersObj)
-    let expectedResult = {'2': "Isgalamido"}
+    let expectedResult = {'2': "Dono da Bola"}
 
     expect(functionReturn).toEqual(expectedResult)
   })
