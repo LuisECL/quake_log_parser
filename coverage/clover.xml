@@ -1,18 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1655315701727" clover="3.2.0">
-  <project timestamp="1655315701727" name="All files">
-    <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2" elements="11" coveredelements="11" complexity="0" loc="9" ncloc="9" packages="1" files="1" classes="1"/>
+<coverage generated="1655342911949" clover="3.2.0">
+  <project timestamp="1655342911949" name="All files">
+    <metrics statements="28" coveredstatements="28" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3" elements="35" coveredelements="35" complexity="0" loc="28" ncloc="28" packages="1" files="2" classes="2"/>
+    <file name="getStartEndPoints.js" path="C:\Users\Luis\Documents\Full Stack Projects\quake_log_parser\modules\getStartEndPoints.js">
+      <metrics statements="19" coveredstatements="19" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="3" count="4" type="stmt"/>
+      <line num="5" count="4" type="stmt"/>
+      <line num="6" count="5512" type="stmt"/>
+      <line num="7" count="5512" type="stmt"/>
+      <line num="9" count="5512" type="cond" truecount="2" falsecount="0"/>
+      <line num="10" count="26" type="stmt"/>
+      <line num="14" count="4" type="stmt"/>
+      <line num="16" count="4" type="stmt"/>
+      <line num="17" count="26" type="stmt"/>
+      <line num="18" count="26" type="stmt"/>
+      <line num="20" count="26" type="cond" truecount="2" falsecount="0"/>
+      <line num="21" count="4" type="stmt"/>
+      <line num="22" count="4" type="stmt"/>
+      <line num="24" count="22" type="stmt"/>
+      <line num="25" count="22" type="stmt"/>
+      <line num="28" count="26" type="stmt"/>
+      <line num="32" count="4" type="stmt"/>
+      <line num="36" count="1" type="stmt"/>
+    </file>
     <file name="splitLogLines.js" path="C:\Users\Luis\Documents\Full Stack Projects\quake_log_parser\modules\splitLogLines.js">
       <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-      <line num="1" count="1" type="stmt"/>
-      <line num="3" count="1" type="stmt"/>
-      <line num="4" count="4" type="stmt"/>
-      <line num="6" count="4" type="stmt"/>
-      <line num="7" count="4" type="stmt"/>
-      <line num="8" count="5336" type="stmt"/>
-      <line num="11" count="4" type="stmt"/>
-      <line num="14" count="1" type="stmt"/>
-      <line num="16" count="1" type="stmt"/>
+      <line num="1" count="2" type="stmt"/>
+      <line num="3" count="2" type="stmt"/>
+      <line num="4" count="10" type="stmt"/>
+      <line num="6" count="10" type="stmt"/>
+      <line num="7" count="10" type="stmt"/>
+      <line num="8" count="16164" type="stmt"/>
+      <line num="11" count="10" type="stmt"/>
+      <line num="14" count="2" type="stmt"/>
+      <line num="16" count="2" type="stmt"/>
     </file>
   </project>
 </coverage>
