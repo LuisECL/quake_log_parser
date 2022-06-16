@@ -16,9 +16,9 @@ When reading each log line, the system should verify:
     ✔ Does the player's name changed? @done(22-06-16 20:25)
     ✔ Does the player's name have spaces in it? @done(22-06-16 20:25)
   Kill:
-    ☐ Did the player kill him/herself? -> Don't add anything to total kill count nor player's kill count
     ☐ Is it a "player kill"? -> Add 1 to his/her killCount and to totalKillCount
     ☐ Is it a "world kill"? -> Subtract 1 from his/her killCount and add 1 to totalKillCount
+    ☐ Did the player kill him/herself? -> Consider as a "world kill" = Subtract 1 from his/her killCount and add 1 to totalKillCount
 
 Player ranking:
   ☐ Iterate through count kills and create an array with the values (do not repeat values)
