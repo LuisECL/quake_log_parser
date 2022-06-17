@@ -1,13 +1,13 @@
 System should follow these steps:
   ✔ 1. Find matches' start and end point and declare a variable to receive the game data @done(22-06-16 20:25)
-  ☐ 2. Pass each line of a match through a series of auxiliary functions to process users interactions and calculate kill counts
-  ☐ 3. Return the game data and write a JSON file with the result
+  ✔ 2. Pass each line of a match through a series of auxiliary functions to process users interactions and calculate kill counts @done(22-06-17 00:13)
+  ✔ 3. Return the game data and write a JSON file with the result @done(22-06-17 00:13)
 
 The log file contains the following trigger words:
   ✔ 1. InitGame @done(22-06-16 20:25)
   ✔ 2. ClientConnect @done(22-06-16 20:25)
   ✔ 3. ClientUserinfoChanged @done(22-06-16 20:25)
-  ☐ 4. Kill
+  ✔ 4. Kill @done(22-06-17 00:13)
 
 When reading each log line, the system should verify:
   ClientConnect:
@@ -21,7 +21,7 @@ When reading each log line, the system should verify:
     ✔ Did the player kill him/herself? -> Consider as a "world kill" = Subtract 1 from his/her killCount and add 1 to totalKillCount @done(22-06-16 21:23)
 
 Player ranking:
-  ☐ Iterate through count kills and create an array with the values (do not repeat values)
-  ☐ Sort values in decreasing order
-  ☐ Mount 'ranking' object with values as keys
-  ☐ Add an array of users' name (for cases where more than one player got the same score) to each key
+  ✔ Iterate through count kills and create an array with the values (do not repeat values) @done(22-06-17 00:14)
+  ✔ Sort values in decreasing order @done(22-06-17 00:14)
+  ✔ Mount 'ranking' object @done(22-06-17 00:14)
+  ✔ Add an array of users' name (for cases where more than one player got the same score) to each key @done(22-06-17 00:14)
