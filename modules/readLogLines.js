@@ -1,8 +1,11 @@
 const clientConnect = require("./clientConnect");
 const clientUpdate = require("./clientUpdate");
 const killCountUpdate = require("./killCountUpdate");
+const organizeMatchInfo = require("./organizeMatchInfo");
 
 const readLogLines = function(logLinesArray, allStartEndPoints) {
+
+  let allMatchesInfo = {}
 
   for (let j=0; j<allStartEndPoints.length; j++){
 
@@ -19,15 +22,14 @@ const readLogLines = function(logLinesArray, allStartEndPoints) {
       clientConnect(logLine, playersObj, killsObj)
       clientUpdate(logLine, playersObj)
       killCountUpdate(logLine, killsObj)
-      console.log([playersObj, killsObj])
     }
 
     let gameNum = "game_"+(j+1)
-    console.log(gameNum)
+    allMatchesInfo[gameNum] = organizeMatchInfo(playersObj, killsObj)
 
   };
 
-  return
+  return allMatchesInfo
 
 }
 
