@@ -1,40 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1655342911949" clover="3.2.0">
-  <project timestamp="1655342911949" name="All files">
-    <metrics statements="28" coveredstatements="28" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3" elements="35" coveredelements="35" complexity="0" loc="28" ncloc="28" packages="1" files="2" classes="2"/>
-    <file name="getStartEndPoints.js" path="C:\Users\Luis\Documents\Full Stack Projects\quake_log_parser\modules\getStartEndPoints.js">
-      <metrics statements="19" coveredstatements="19" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
-      <line num="1" count="1" type="stmt"/>
-      <line num="3" count="4" type="stmt"/>
-      <line num="5" count="4" type="stmt"/>
-      <line num="6" count="5512" type="stmt"/>
-      <line num="7" count="5512" type="stmt"/>
-      <line num="9" count="5512" type="cond" truecount="2" falsecount="0"/>
-      <line num="10" count="26" type="stmt"/>
-      <line num="14" count="4" type="stmt"/>
-      <line num="16" count="4" type="stmt"/>
-      <line num="17" count="26" type="stmt"/>
-      <line num="18" count="26" type="stmt"/>
-      <line num="20" count="26" type="cond" truecount="2" falsecount="0"/>
-      <line num="21" count="4" type="stmt"/>
-      <line num="22" count="4" type="stmt"/>
-      <line num="24" count="22" type="stmt"/>
-      <line num="25" count="22" type="stmt"/>
-      <line num="28" count="26" type="stmt"/>
-      <line num="32" count="4" type="stmt"/>
-      <line num="36" count="1" type="stmt"/>
-    </file>
-    <file name="splitLogLines.js" path="C:\Users\Luis\Documents\Full Stack Projects\quake_log_parser\modules\splitLogLines.js">
-      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-      <line num="1" count="2" type="stmt"/>
-      <line num="3" count="2" type="stmt"/>
-      <line num="4" count="10" type="stmt"/>
-      <line num="6" count="10" type="stmt"/>
-      <line num="7" count="10" type="stmt"/>
-      <line num="8" count="16164" type="stmt"/>
-      <line num="11" count="10" type="stmt"/>
-      <line num="14" count="2" type="stmt"/>
-      <line num="16" count="2" type="stmt"/>
-    </file>
+<coverage generated="1655435286698" clover="3.2.0">
+  <project timestamp="1655435286698" name="All files">
+    <metrics statements="128" coveredstatements="128" conditionals="30" coveredconditionals="30" methods="10" coveredmethods="10" elements="168" coveredelements="168" complexity="0" loc="128" ncloc="128" packages="2" files="9" classes="9"/>
+    <package name="modules">
+      <metrics statements="126" coveredstatements="126" conditionals="30" coveredconditionals="30" methods="10" coveredmethods="10"/>
+      <file name="clientConnect.js" path="C:\Users\Luis\Documents\Full Stack Projects\quake_log_parser\modules\clientConnect.js">
+        <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="111" type="stmt"/>
+        <line num="4" count="111" type="stmt"/>
+        <line num="6" count="111" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="102" type="stmt"/>
+        <line num="10" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="14" count="6" type="stmt"/>
+        <line num="15" count="6" type="stmt"/>
+        <line num="16" count="6" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+      </file>
+      <file name="clientUpdate.js" path="C:\Users\Luis\Documents\Full Stack Projects\quake_log_parser\modules\clientUpdate.js">
+        <metrics statements="15" coveredstatements="15" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="110" type="stmt"/>
+        <line num="4" count="110" type="stmt"/>
+        <line num="6" count="110" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="97" type="stmt"/>
+        <line num="10" count="13" type="stmt"/>
+        <line num="11" count="13" type="stmt"/>
+        <line num="12" count="19" type="stmt"/>
+        <line num="15" count="13" type="stmt"/>
+        <line num="16" count="13" type="stmt"/>
+        <line num="18" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="19" count="5" type="stmt"/>
+        <line num="22" count="8" type="stmt"/>
+        <line num="23" count="8" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+      </file>
+      <file name="getStartEndPoints.js" path="C:\Users\Luis\Documents\Full Stack Projects\quake_log_parser\modules\getStartEndPoints.js">
+        <metrics statements="19" coveredstatements="19" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="6" type="stmt"/>
+        <line num="5" count="6" type="stmt"/>
+        <line num="6" count="5620" type="stmt"/>
+        <line num="7" count="5620" type="stmt"/>
+        <line num="9" count="5620" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="29" type="stmt"/>
+        <line num="14" count="6" type="stmt"/>
+        <line num="16" count="6" type="stmt"/>
+        <line num="17" count="29" type="stmt"/>
+        <line num="18" count="29" type="stmt"/>
+        <line num="20" count="29" type="cond" truecount="2" falsecount="0"/>
+        <line num="21" count="6" type="stmt"/>
+        <line num="22" count="6" type="stmt"/>
+        <line num="24" count="23" type="stmt"/>
+        <line num="25" count="23" type="stmt"/>
+        <line num="28" count="29" type="stmt"/>
+        <line num="32" count="6" type="stmt"/>
+        <line num="36" count="2" type="stmt"/>
+      </file>
+      <file name="killCountUpdate.js" path="C:\Users\Luis\Documents\Full Stack Projects\quake_log_parser\modules\killCountUpdate.js">
+        <metrics statements="21" coveredstatements="21" conditionals="12" coveredconditionals="12" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="114" type="stmt"/>
+        <line num="4" count="114" type="stmt"/>
+        <line num="5" count="114" type="stmt"/>
+        <line num="6" count="114" type="stmt"/>
+        <line num="8" count="114" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="96" type="stmt"/>
+        <line num="12" count="18" type="cond" truecount="4" falsecount="0"/>
+        <line num="13" count="15" type="stmt"/>
+        <line num="15" count="15" type="cond" truecount="4" falsecount="0"/>
+        <line num="16" count="12" type="stmt"/>
+        <line num="19" count="3" type="stmt"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="23" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+      </file>
+      <file name="organizeMatchInfo.js" path="C:\Users\Luis\Documents\Full Stack Projects\quake_log_parser\modules\organizeMatchInfo.js">
+        <metrics statements="13" coveredstatements="13" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="9" type="stmt"/>
+        <line num="6" count="9" type="stmt"/>
+        <line num="8" count="9" type="stmt"/>
+        <line num="10" count="9" type="stmt"/>
+        <line num="11" count="18" type="stmt"/>
+        <line num="13" count="18" type="cond" truecount="2" falsecount="0"/>
+        <line num="14" count="5" type="stmt"/>
+        <line num="17" count="18" type="stmt"/>
+        <line num="21" count="9" type="stmt"/>
+        <line num="23" count="9" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+      </file>
+      <file name="rankPlayers.js" path="C:\Users\Luis\Documents\Full Stack Projects\quake_log_parser\modules\rankPlayers.js">
+        <metrics statements="17" coveredstatements="17" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="3" count="14" type="stmt"/>
+        <line num="4" count="14" type="stmt"/>
+        <line num="6" count="14" type="stmt"/>
+        <line num="7" count="37" type="cond" truecount="2" falsecount="0"/>
+        <line num="8" count="8" type="stmt"/>
+        <line num="10" count="29" type="stmt"/>
+        <line num="13" count="26" type="stmt"/>
+        <line num="15" count="14" type="stmt"/>
+        <line num="16" count="29" type="stmt"/>
+        <line num="17" count="29" type="stmt"/>
+        <line num="18" count="29" type="stmt"/>
+        <line num="20" count="29" type="stmt"/>
+        <line num="21" count="115" type="cond" truecount="2" falsecount="0"/>
+        <line num="22" count="37" type="stmt"/>
+        <line num="27" count="14" type="stmt"/>
+        <line num="31" count="3" type="stmt"/>
+      </file>
+      <file name="readLogLines.js" path="C:\Users\Luis\Documents\Full Stack Projects\quake_log_parser\modules\readLogLines.js">
+        <metrics statements="21" coveredstatements="21" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="19" count="3" type="stmt"/>
+        <line num="20" count="106" type="stmt"/>
+        <line num="22" count="106" type="stmt"/>
+        <line num="23" count="106" type="stmt"/>
+        <line num="24" count="106" type="stmt"/>
+        <line num="27" count="3" type="stmt"/>
+        <line num="28" count="3" type="stmt"/>
+        <line num="32" count="2" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+      </file>
+      <file name="splitLogLines.js" path="C:\Users\Luis\Documents\Full Stack Projects\quake_log_parser\modules\splitLogLines.js">
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="13" type="stmt"/>
+        <line num="6" count="13" type="stmt"/>
+        <line num="7" count="13" type="stmt"/>
+        <line num="8" count="16282" type="stmt"/>
+        <line num="11" count="13" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="test_logs">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="logLines.js" path="C:\Users\Luis\Documents\Full Stack Projects\quake_log_parser\test_logs\logLines.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="67" count="2" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>
