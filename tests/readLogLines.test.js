@@ -25,4 +25,35 @@ describe("Read log lines", () => {
 
   })
 
+  it("02. Test 01 + match with 2 players, 11 total kills and 8 world kills", ()=> {
+    let logLinesArray = splitLogLines('./test_logs/testLog02.log')
+    let allStartEndPoints = getStartEndPoints(logLinesArray)
+    let functionResult = readLogLines(logLinesArray, allStartEndPoints)
+    let expectedResult = {
+      game_1: {
+        total_kills: 0,
+        players: [
+          "Isgalamido"
+        ],
+        kills: {
+          "Isgalamido": 0
+        }
+      },
+      game_2: {
+        total_kills: 11,
+        players: [
+          "Isgalamido",
+          "Mocinha"
+        ],
+        kills: {
+          "Isgalamido": 0,
+          "Mocinha": 0
+        }
+      }
+    }
+
+    expect(functionResult).toEqual(expectedResult)
+
+  })
+
 })

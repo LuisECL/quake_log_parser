@@ -26,6 +26,7 @@ const readLogLines = function(logLinesArray, allStartEndPoints) {
 
     let gameNum = "game_"+(j+1)
     allMatchesInfo[gameNum] = organizeMatchInfo(playersObj, killsObj)
+    console.log(allMatchesInfo)
 
   };
 
