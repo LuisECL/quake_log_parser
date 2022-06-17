@@ -9,17 +9,7 @@ describe("Read log lines", () => {
     let logLinesArray = splitLogLines('./test_logs/testLog02.log')
     let allStartEndPoints = getStartEndPoints(logLinesArray)
     let functionResult = readLogLines(logLinesArray, allStartEndPoints)
-    let expectedResult = [
-      "0:00",
-      "15:00",
-      "20:34",
-      "20:34",
-      "20:37",
-      "20:37",
-      "20:37",
-      "20:37",
-      "20:37"
-    ]
+    let expectedResult = []
 
     expect(functionResult).toEqual(expectedResult)
 

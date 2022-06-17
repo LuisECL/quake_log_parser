@@ -1,5 +1,6 @@
 const clientConnect = require("./clientConnect");
 const clientUpdate = require("./clientUpdate");
+const killCountUpdate = require("./killCountUpdate");
 
 const readLogLines = function(logLinesArray, allStartEndPoints) {
 
@@ -16,6 +17,7 @@ const readLogLines = function(logLinesArray, allStartEndPoints) {
 
       clientConnect(logLine, playersObj, killsObj)
       clientUpdate(logLine, playersObj)
+      killCountUpdate(logLine, killsObj)
       console.log([playersObj, killsObj])
     }
 
