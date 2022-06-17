@@ -17,6 +17,9 @@ describe("Read log lines", () => {
         ],
         kills: {
           "Isgalamido": 0
+        },
+        ranked_players: {
+          1: ["Isgalamido"]
         }
       }
     }
@@ -37,6 +40,9 @@ describe("Read log lines", () => {
         ],
         kills: {
           "Isgalamido": 0
+        },
+        ranked_players: {
+          1: ["Isgalamido"]
         }
       },
       game_2: {
@@ -48,6 +54,9 @@ describe("Read log lines", () => {
         kills: {
           "Isgalamido": 0,
           "Mocinha": 0
+        },
+        ranked_players: {
+          1: ["Isgalamido", "Mocinha"]
         }
       }
     }
