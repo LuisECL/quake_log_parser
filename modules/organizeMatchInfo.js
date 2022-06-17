@@ -20,7 +20,7 @@ const organizeMatchInfo = function(playersObj, killsObj){
 
   let ranked_players = rankPlayers(kills)
 
-  return {total_kills, players, kills}
+  return {total_kills, players, kills, ranked_players}
 
 }
 

@@ -10,7 +10,11 @@ describe("organizeMatchInfo function", ()=> {
     let expectedResult = {
       total_kills: 3,
       players: ["Isgalamido", "Dono da Bola"],
-      kills: {Isgalamido: 2, "Dono da Bola": 1}
+      kills: {Isgalamido: 2, "Dono da Bola": 1},
+      ranked_players: {
+        1: ["Isgalamido"],
+        2: ["Dono da Bola"]
+      }
     }
 
     expect(functionReturn).toEqual(expectedResult)
@@ -24,7 +28,11 @@ describe("organizeMatchInfo function", ()=> {
     let expectedResult = {
       total_kills: 2,
       players: ["Isgalamido", "Dono da Bola"],
-      kills: {Isgalamido: 2, "Dono da Bola": 0}
+      kills: {Isgalamido: 2, "Dono da Bola": 0},
+      ranked_players: {
+        1: ["Isgalamido"],
+        2: ["Dono da Bola"]
+      }
     }
 
     expect(functionReturn).toEqual(expectedResult)
@@ -38,7 +46,10 @@ describe("organizeMatchInfo function", ()=> {
     let expectedResult = {
       total_kills: 11,
       players: ["Isgalamido", "Dono da Bola"],
-      kills: {Isgalamido: 0, "Dono da Bola": 0}
+      kills: {Isgalamido: 0, "Dono da Bola": 0},
+      ranked_players: {
+        1: ["Isgalamido", "Dono da Bola"]
+      }
     }
 
     expect(functionReturn).toEqual(expectedResult)
@@ -52,7 +63,10 @@ describe("organizeMatchInfo function", ()=> {
     let expectedResult = {
       total_kills: 11,
       players: ["Isgalamido"],
-      kills: {Isgalamido: 0}
+      kills: {Isgalamido: 0},
+      ranked_players: {
+        1: ["Isgalamido"]
+      }
     }
 
     expect(functionReturn).toEqual(expectedResult)
@@ -66,7 +80,10 @@ describe("organizeMatchInfo function", ()=> {
     let expectedResult = {
       total_kills: 0,
       players: ["Isgalamido"],
-      kills: {Isgalamido: 0}
+      kills: {Isgalamido: 0},
+      ranked_players: {
+        1: ["Isgalamido"]
+      }
     }
 
     expect(functionReturn).toEqual(expectedResult)
@@ -108,6 +125,14 @@ describe("organizeMatchInfo function", ()=> {
         "User 04": 3,
         "User 05": 5,
         "User 06": 4
+      },
+      ranked_players: {
+        1: ["User 01"],
+        2: ["User 03"],
+        3: ["User 05"],
+        4: ["User 06"],
+        5: ["User 04"],
+        6: ["User 02"],
       }
     }
 
