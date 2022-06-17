@@ -63,4 +63,24 @@ describe("killCountUpdate function", ()=> {
     expect(functionReturn).toEqual(expectedResult)
   })
 
+  it("07. Player kills him/herself: consider as world kill (+1 to total kills, -1 to player's kill count)", ()=> {
+    let logLine = logLines.user2KillUser2
+    let killsObj = {total: 1, '2':1}
+
+    let functionReturn = killCountUpdate(logLine, killsObj)
+    let expectedResult = {total: 2, '2':0}
+
+    expect(functionReturn).toEqual(expectedResult)
+  })
+
+  it("08. Player kills him/herself: consider as world kill (+1 ONLY to total kills if player's kill count is 0)", ()=> {
+    let logLine = logLines.user2KillUser2
+    let killsObj = {total: 1, '2':0}
+
+    let functionReturn = killCountUpdate(logLine, killsObj)
+    let expectedResult = {total: 2, '2':0}
+
+    expect(functionReturn).toEqual(expectedResult)
+  })
+
 })

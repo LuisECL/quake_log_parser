@@ -9,7 +9,7 @@ const killCountUpdate = function(logLine, killsObj){
     return killsObj
   }
 
-  if(killerID == worldID){
+  if(killerID == worldID || killerID == deathID){
     killsObj.total++
 
     if(killsObj[deathID] == 0 || killsObj[deathID] == undefined){
