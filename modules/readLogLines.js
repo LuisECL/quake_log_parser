@@ -4,8 +4,9 @@ const killCountUpdate = require("./killCountUpdate");
 
 const readLogLines = function(logLinesArray, allStartEndPoints) {
 
-  allStartEndPoints.forEach(startEndPair => {
+  for (let j=0; j<allStartEndPoints.length; j++){
 
+    let startEndPair = allStartEndPoints[j]
     let startPoint = startEndPair[0]
     let endPoint = startEndPair[1]
     let playersObj = {}
@@ -21,7 +22,10 @@ const readLogLines = function(logLinesArray, allStartEndPoints) {
       console.log([playersObj, killsObj])
     }
 
-  });
+    let gameNum = "game_"+(j+1)
+    console.log(gameNum)
+
+  };
 
   return
 
