@@ -1,3 +1,5 @@
+const rankPlayers = require("./rankPlayers")
+
 const organizeMatchInfo = function(playersObj, killsObj){
 
   let players = []
@@ -15,6 +17,8 @@ const organizeMatchInfo = function(playersObj, killsObj){
     kills[playersObj[id]] = killsObj[id]
 
   }
+
+  let ranked_players = rankPlayers(kills)
 
   return {total_kills, players, kills}
 
