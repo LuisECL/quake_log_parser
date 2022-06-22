@@ -31,10 +31,7 @@ npm install
 ```
 node app
 ```
-4. Open grouped_information.json file from the root directory
-```
-git clone <url>
-```
+4. Open **grouped_information.json** file from the root directory
 
 This project comes with a quake log file by default. If you wish to use a different file you simply need to include it on the project's root directory and change the file path being sent as a parameter for splitLogLines function on the app.js file, on line 8: <br />
 ![file-path](img/file-path.png)
